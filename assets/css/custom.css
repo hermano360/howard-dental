@@ -56,9 +56,25 @@ ul.what-sets-us-apart li.top{
   width: 29%;
   margin-left: 2%;
   margin-right:2%;
+  margin-bottom: 2rem;
   display: inline-block;
   vertical-align: top;
 }
+@media screen and (max-width: 800px) {
+
+  ul.what-sets-us-apart li.top{
+    width: 40%;
+  }
+
+}
+@media screen and (max-width: 500px) {
+
+  ul.what-sets-us-apart li.top{
+    width: 90%;
+  }
+
+}
+
 ul.what-sets-us-apart li.top{
   font-size: 14px;
 }
