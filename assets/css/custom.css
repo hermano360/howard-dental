@@ -91,6 +91,13 @@ form .field.quarter {
   float: left;
   padding: 0 0 0 0.75rem;
 }
+@media screen and (max-width: 600px) {
+
+  form .field.quarter.day, form .field.quarter.call {
+    width: 50%;
+  }
+
+}
 form .field.full {
   width: 100%;
   float: left;
