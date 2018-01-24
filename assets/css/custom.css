@@ -1,0 +1,85 @@
+.half-right {
+  width: 50%;
+  float: right;
+}
+
+.introPhoto {
+  margin: 2rem 0;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 0;
+  position: relative;
+}
+.introPhoto img{
+  width: 50%;
+  border-radius: 4px;
+  display: block;
+  float: right;
+  margin: 1rem;
+  max-width: 300px;
+}
+.introPhoto.right img{
+  float: right;
+}
+.introPhoto.left img{
+  float: left;
+}
+
+#main article {
+  -moz-transform: translateY(0.25rem);
+  -webkit-transform: translateY(0.25rem);
+  -ms-transform: translateY(0.25rem);
+  transform: translateY(0.25rem);
+  -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+  -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+  -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+  position: relative;
+  width: 50rem;
+  max-width: 100%;
+  background-color: rgba(27, 31, 34, 0.85);
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.center-major {
+  width:100%;
+  text-align: center;
+}
+ul.what-sets-us-apart {
+  vertical-align: top;
+}
+
+ul.what-sets-us-apart li.top{
+  width: 29%;
+  margin-left: 2%;
+  margin-right:2%;
+  display: inline-block;
+  vertical-align: top;
+}
+ul.what-sets-us-apart li.top{
+  font-size: 14px;
+}
+ul.what-sets-us-apart li.inner{
+  font-size: 12px;
+}
+ul.what-sets-us-apart li.top span{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+form .field.quarter {
+  width: 25%;
+  float: left;
+  padding: 0 0 0 0.75rem;
+}
+form .field.full {
+  width: 100%;
+  float: left;
+  padding: 0 0 0 0.2rem;
+}
+form .field.full.center{
+  text-align: center;
+}
