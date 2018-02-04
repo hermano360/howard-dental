@@ -42,6 +42,7 @@
   background-color: rgba(27, 31, 34, 0.85);
   border-radius: 4px;
   opacity: 0;
+  min-height: 100%;
 }
 
 .center-major {
@@ -105,4 +106,47 @@ form .field.full {
 }
 form .field.full.center{
   text-align: center;
+}
+
+.modal-button {
+  font-size: .6rem;
+  height: 2rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  padding: 0 .5rem;
+}
+.modal-button.active {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+
+
+.modal-button-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.image.main.setsapart {
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* Team Fresh */
+.team-fresh-content {
+  display: none;
+}
+
+.team-fresh-content.active {
+  display: inline-block;
+}
+
+/* Pediatrics */
+.pediatrics-content {
+  display: none;
+}
+
+.pediatrics-content.active {
+  display: inline-block;
 }

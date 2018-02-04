@@ -368,6 +368,44 @@
 
 				});
 
+        // Controls modal content
+
+				var reassignContent = function(field, modal) {
+
+					$('.' + field + '-button')
+						.on('click',
+							function() {
+								$('.'+ modal +'-button').removeClass('active')
+								$(this).addClass('active')
+								$('.'+ modal +'-content').removeClass('active')
+								$('.'+ modal +'-content.'+ field).addClass('active')
+							})
+				}
+        // Team Fresh Button
+				reassignContent('pediatric', 'team-fresh')
+				reassignContent('orthodontic', 'team-fresh')
+				reassignContent('awards', 'team-fresh')
+				reassignContent('board', 'team-fresh')
+				reassignContent('publications', 'team-fresh')
+				reassignContent('team', 'team-fresh')
+
+        // Pediatrics Button
+				reassignContent('general-info', 'pediatrics')
+				reassignContent('services', 'pediatrics')
+				reassignContent('faq', 'pediatrics')
+				reassignContent('emergencies', 'pediatrics')
+
+
+					// $('.pediatric-button')
+					// 	.on('click',
+					// 		function() {
+					// 			$('.team-fresh-button').removeClass('active')
+					// 			$(this).addClass('active')
+					// 			$('.team-fresh-content').removeClass('active')
+					// 			$('.team-fresh-content.pediatric').addClass('active')
+					// 		})
+
+
 			// Scroll restoration.
 			// This prevents the page from scrolling back to the top on a hashchange.
 				if ('scrollRestoration' in history)
