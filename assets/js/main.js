@@ -116,9 +116,7 @@
 									setTimeout(function() {
 										$body.removeClass('is-switching');
 									}, (initial ? 200 : 0));
-
 								return;
-
 							}
 
 						// Lock.
@@ -302,6 +300,7 @@
 							.appendTo($this)
 							.on('click', function() {
 								location.hash = '';
+
 							});
 
 					// Prevent clicks from inside article from bubbling.
@@ -315,10 +314,16 @@
 				$body.on('click', function(event) {
 
 					// Article visible? Hide.
-						if ($body.hasClass('is-article-visible'))
-							$main._hide(true);
+						if ($body.hasClass('is-article-visible')){
+							$main._hide(true)
+						}
+
 
 				});
+
+				$('.popup-body').on('click', function(e) {
+					$(this).hide()
+				})
 
 				$window.on('keyup', function(event) {
 
@@ -348,9 +353,9 @@
 							// Prevent default.
 								event.preventDefault();
 								event.stopPropagation();
-
 							// Hide.
 								$main._hide();
+
 
 						}
 
@@ -362,6 +367,7 @@
 								event.stopPropagation();
 
 							// Show article.
+
 								$main._show(location.hash.substr(1));
 
 						}
@@ -394,6 +400,10 @@
 				reassignContent('services', 'pediatrics')
 				reassignContent('faq', 'pediatrics')
 				reassignContent('emergencies', 'pediatrics')
+
+        // Orthodontics Button
+				reassignContent('junior', 'orthodontics')
+				reassignContent('senior', 'orthodontics')
 
 
 					// $('.pediatric-button')
