@@ -324,6 +324,9 @@
 				$('.popup-body').on('click', function(e) {
 					$(this).hide()
 				})
+				$('.navbar').on('click', function(e) {
+					$('.popup-body').hide()
+				})
 
 				$window.on('keyup', function(event) {
 
@@ -403,7 +406,10 @@
 
         // Orthodontics Button
 				reassignContent('junior', 'orthodontics')
-				reassignContent('senior', 'orthodontics')
+				reassignContent('teen', 'orthodontics')
+				reassignContent('adult', 'orthodontics')
+				reassignContent('braces', 'orthodontics')
+				reassignContent('invisalign', 'orthodontics')
 
 
 					// $('.pediatric-button')
